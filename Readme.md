@@ -191,6 +191,6 @@ Como os testes são executados em ambiente de homologação (staging), não há 
 ---
 
 ## Documentação Completa
-- 📋 **Notion:** [inserir link do Notion aqui]
+- 📋 **Notion:** [https://danih-programacao.notion.site/Lacrei-Sa-de-Desafio-QA-37308852179d80baab76e37c83554815]
 - 👩‍💻 **QA Responsável:** Daniely Cristina Hernandez
 - 📅 **Data:** Junho/2026
