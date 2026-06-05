@@ -29,20 +29,26 @@ O objetivo foi validar os principais fluxos da plataforma, identificando problem
 ---
 
 ## Estrutura do Projeto
+## Estrutura do Projeto
+
+```text
 cypress/
-e2e/
-features/
-cadastro.feature
-step_definitions/
-cadastro.js
-support/
-e2e.js
+├── e2e/
+│   ├── features/
+│   │   └── cadastro.feature
+│   └── step_definitions/
+│       └── cadastro.js
+├── support/
+│   └── e2e.js
+
 .github/
-workflows/
-cypress.yml
+└── workflows/
+    └── cypress.yml
+
 cypress.config.js
 package.json
 README.md
+```
 
 ---
 
