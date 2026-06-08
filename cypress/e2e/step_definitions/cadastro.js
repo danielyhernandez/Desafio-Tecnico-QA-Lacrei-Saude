@@ -21,14 +21,25 @@ When('preenche o campo {string} com {string}', (campo, valor) => {
 })
 
 When('marca os checkboxes de aceite', () => {
-  cy.get('#acceptedPrivacyDocument').check({ force: true })
-  cy.get('#is18YearsOldOrMore').check({ force: true })
+  cy.get('#acceptedPrivacyDocument')
+    .should('be.visible')
+    .check()
+
+  cy.get('#is18YearsOldOrMore')
+    .should('be.visible')
+    .check()
 })
 
 When('clica no botão {string}', (botao) => {
-  cy.contains('button', botao).click({ force: true })
+  cy.contains('button', botao)
+    .should('be.visible')
+    .and('not.be.disabled')
+    .click()
 })
 
 Then('é redirecionado para a página de verificação de e-mail', () => {
   cy.url().should('include', '/verificar-email')
+
+  cy.contains('Estamos quase lá...')
+    .should('be.visible')
 })
